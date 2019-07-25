@@ -24,17 +24,20 @@ body{
     font-size: 5.5rem;
 }
 h1{
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
+
 h2{
-    margin-bottom: 0.2rem;
+    
     opacity: 0.8;
-   
+
 }
 
 
 @media(max-width:768px){
+    
     #time{
         font-size: 4.5rem;
     }
+
 }

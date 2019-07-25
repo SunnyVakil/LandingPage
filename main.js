@@ -35,15 +35,15 @@ function addZero(n) {
             document.body.style.backgroundImage = "url('./images/morning.jpg')";
             document.body.style.backgroundSize = "cover";
             greeting.textContent = 'Good Morning ,'
-        } else if(hour < 18){
-            document.body.style.backgroundImage = "url('./ images / afternoon.jpg')";
+        } else if(hour>=12 && hour < 18){
+            document.body.style.backgroundImage = "url('./images/afternoon.jpg')";
             document.body.style.backgroundSize = "cover";
+            document.body.style.color = "#f5f5f1";
             greeting.textContent = 'Good Afternoon ,'
         }else {
             document.body.style.backgroundImage = "url('./images/evening.jpg')";
             document.body.style.backgroundSize = "cover";
             document.body.style.color = "#f5f5f1";
-
             greeting.textContent = 'Good Evening ,'
         }
     }
@@ -73,8 +73,6 @@ function addZero(n) {
         }
 
 }
-
-
 
 name.addEventListener('keypress',setName);
 name.addEventListener('blur',setName);
